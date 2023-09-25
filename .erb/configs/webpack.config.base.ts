@@ -28,6 +28,16 @@ const configuration: webpack.Configuration = {
           },
         },
       },
+      {
+        test: /\.(gltf|glb)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {},
+      },
+      {
+        test: /\.(mp3|wav|flac|acc)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {},
+      },
     ],
   },
 
